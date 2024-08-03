@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    background-image: url(./Koala\ background\ JS.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.off-screen-menu {
+    background-image: linear-gradient(45deg, #9F8E25, #78681B);
+    height: 100vh;
+    width: 390px;
+    max-width: 640px;
+    position: absolute;
+    z-index: -1;
+    top: -100vh;
+    transition: 1s ease;
+}
+
+.off-screen-menu.active {
+    top: 70px;
+}
+
+.hamburger-button {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+}
+
+.hamburger-button span {
+    height: 7px;
+    width: 100%;
+    background-color: #FAE278;
+    position: absolute;
+    z-index: 9;
+    top: 40%;
+    left: 10px;
+    border-radius: 25px;
+}
+
+.hamburger-button span:nth-child(1) {
+    top: 15%;
+}
+
+.hamburger-button span:nth-child(3) {
+    top: 65%;
+}
+
+li {
+    font-family: "rubik mono one";
+    color: #FAE278;
+    font-size: 20px;
+    margin: 15px 0px;
+    list-style-type: none;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+
+
+.nav-container {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+nav h1 {
+    font-family: "rubik mono one";
+    font-size: 45px;
+    font-weight: 400;
+    margin: 0 10px;
+    color: #FAE278;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-image: linear-gradient(90deg, #9F8E25, #78681B 90%);
+}
+
+.nav-bar-border {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20px;
+    background-image: linear-gradient(90deg, #78681B, #FAE278, #78681B);
+}
+
+.nav-bar-border p {
+    font-family: "rubik mono one";
+    font-weight: 200;
+    font-size: 12px;
+    color: #FAE278;
+    margin: 0 10px;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    max-width: 640px;
+    height: 100vh;
+}
+
+.score-window {
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.score-box {
+    display: flex;
+}
+
+.score-box p {
+    margin: 10px 10px;
+}
+
+.koala-illustration-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    max-width: 200px;
+    height: 100%;
+}
+
+.koala-illustration-box img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    top: 40px
+}
+
+.game-window {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #78681B;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+}
+
+.game-window-border {
+    width: 102%;
+    height: 102%;
+    top: -2%;
+    left: -1%;
+    background-image: linear-gradient(135deg, #FAE278, #78681B);
+    border-radius: 25px 25px 0 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    background-color: #FAE278;
+    border-radius: 25px;
+    margin: 10px 0px;
+    padding-right: 10px;
+}
+
+.question {
+    min-height: 20px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.indicator {
+    font-family: "rubik mono one";
+    font-size: 32px;
+    align-self: center;
+    margin: 0 10px;
+    color: #78681B;
+}
